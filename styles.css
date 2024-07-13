@@ -1,0 +1,98 @@
+/* 일반 스타일 */
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* 최대 너비를 800px로 변경 */
+    padding: 20px;
+}
+
+.post-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* 제목 스타일 */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* 여기로 margin-bottom 이동 */
+}
+
+h3 {
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+/* 문단 및 작은 글씨 스타일 */
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+small {
+    color: #888;
+}
+
+/* 폼 컨테이너 스타일 */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 입력 필드 및 버튼 스타일 */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* 성공 메시지 스타일 */
+#post-success-message {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}

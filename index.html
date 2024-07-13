@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 목록</title>
+    <style>
+        /* 여기에 CSS 스타일링 추가 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .write-btn {
+            float: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>글 목록</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 여기에 실제 글 목록 데이터를 동적으로 추가 -->
+            <tr>
+                <td>첫 번째 글 제목</td>
+                <td>작성자1</td>
+                <td>2024-07-14</td>
+            </tr>
+            <!-- 다른 글들도 마찬가지로 추가 -->
+        </tbody>
+    </table>
+    <a href="writing.html" class="write-btn">글쓰기</a>
+</body>
+</html>

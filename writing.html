@@ -1,0 +1,60 @@
+<!-- writing.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 작성</title>
+    <style>
+        /* 여기에 CSS 스타일링 추가 */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>글 작성</h1>
+    <form action="submit_page.html" method="POST">
+        <label for="title">제목:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="author">작성자:</label>
+        <input type="text" id="author" name="author" required>
+        
+        <label for="content">내용:</label>
+        <textarea id="content" name="content" rows="10" required></textarea>
+        
+        <label for="bold-text">글자 굵게:</label>
+        <input type="checkbox" id="bold-text" name="bold-text">
+        
+        <label for="file">파일 첨부:</label>
+        <input type="file" id="file" name="file">
+        
+        <button type="submit">작성 완료</button>
+    </form>
+</body>
+</html>
